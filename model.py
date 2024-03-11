@@ -41,8 +41,8 @@ def load_csvs(csvs):
     return tensor
 
 Xy = load_csvs(['english.csv',
-                # 'spanish.csv'
-                # 'japanese.csv'])
+                'spanish.csv',
+                'japanese.csv',
                 'russian.csv'])
 X, y = torch.split(Xy, [432,1], dim=1)
 y = y.squeeze().long()
@@ -115,7 +115,7 @@ class network(torch.nn.Module):
         self.model = torch.nn.Sequential(
             torch.nn.Linear(432, 15), torch.nn.ReLU(), torch.nn.BatchNorm1d(15), torch.nn.Dropout(.5),
             torch.nn.Linear(15, 15),  torch.nn.ReLU(), torch.nn.BatchNorm1d(15),
-            torch.nn.Linear(15, 2))
+            torch.nn.Linear(15, 4))
 
     def forward(self, x):
         return self.model(x)
