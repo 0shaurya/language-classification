@@ -4,10 +4,10 @@ Words inputted as a one hot encoding of 16 characters. Input size is 432 dimensi
 
 Duplicates were not taken into account - for example, "abductor" is in both English and Spanish, but the model must pick only one language. However, I imagine this does not have a large effect on the results.
 ## Data sources
-https://github.com/words/an-array-of-english-words/tree/master
-https://github.com/words/an-array-of-spanish-words/tree/master
-https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Japanese2022_10000
-https://www.kaggle.com/datasets/rtatman/opencorpora-russian
+ - https://github.com/words/an-array-of-english-words/tree/master
+ - https://github.com/words/an-array-of-spanish-words/tree/master
+ - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Japanese2022_10000
+ - https://www.kaggle.com/datasets/rtatman/opencorpora-russian
 Dataset size was 60000 words, 15k for each language.
 
 ## Graphs
