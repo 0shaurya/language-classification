@@ -8,6 +8,7 @@ Duplicates were not taken into account - for example, "abductor" is in both Engl
  - https://github.com/words/an-array-of-spanish-words/tree/master
  - https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Japanese2022_10000
  - https://www.kaggle.com/datasets/rtatman/opencorpora-russian
+
 Dataset size was 60000 words, 15k for each language.
 
 ## Graphs
